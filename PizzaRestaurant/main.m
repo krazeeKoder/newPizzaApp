@@ -7,16 +7,37 @@
 //
 
 #import <Foundation/Foundation.h>
-
 #import "Kitchen.h"
-#import "Pizza.h"
+#import "MeanManager.h"
+#import "NiceManager.h"
+//#import "Pizza.h"
 
 int main(int argc, const char * argv[])
 {
-    
-    NSLog(@"Please pick your pizza size and toppings:");
+
     
     Kitchen *restaurantKitchen = [Kitchen new];
+    MeanManager *meanFred = [[MeanManager alloc] init];
+    NiceManager *niceFrank = [[NiceManager alloc]init];
+    
+    
+    NSLog(@"Please pick if you want Frank or Fred as your manager or no for no manager");
+    
+    char str[100];
+    fgets (str, 100, stdin);
+    NSString *inputString = [[NSString alloc] initWithUTF8String:str];
+    inputString = [inputString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    
+    
+    if ([inputString isEqual: @"Fred"] || [inputString isEqual: @"fred"]) {
+        restaurantKitchen.delegate = meanFred;
+        
+    }
+    else if ([inputString isEqual: @"Frank"] || [inputString isEqual: @"frank"]){
+        restaurantKitchen.delegate = niceFrank;
+    }
+    
+    NSLog(@"Please pick your pizza size and toppings:");
     
     while (TRUE) {
         // Loop forever

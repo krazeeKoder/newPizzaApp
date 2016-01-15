@@ -10,13 +10,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PizzaRestaurant/Kitchen.m"
-            timestampString = "474498308.243421"
+            timestampString = "474579348.821149"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
             landmarkName = "-makePizzaWithSize:toppings:"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PizzaRestaurant/Kitchen.m"
+            timestampString = "474579348.821149"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
